@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="font-body">
     <header
       id="header"
-      class="flex flex-col items-center border-lightgray border-b h-screen max-h-[70] transition-all sm:flex-row overflow-hidden"
+      class="flex flex-col items-center justify-between border-lightgray border-b h-screen max-h-[70] transition-all sm:flex-row overflow-hidden duration-500"
     >
       <nav
         class="flex w-full max-w-[283] sm:max-w-[475] md:max-w-[543] lg:max-w-[760] xl:max-w-[1047] items-center justify-between p-6 h-[fit-content]"
@@ -29,11 +29,24 @@
       <nav
         class="flex max-w-[283] sm:max-w-[475] md:max-w-[543] lg:max-w-[760] xl:max-w-[1047] w-full p-6"
       >
-        <ul>
-          <li>Test</li>
+        <ul class="text-4lg font-bold uppercase">
+          <li class="pb-6 item">
+            <a href="" class="text-extralightgray">About us</a>
+          </li>
+          <li class="pb-6 item">
+            <a href="" class="text-extralightgray"> Features</a>
+          </li>
+          <li class="pb-6 item">
+            <a href="" class="text-extralightgray"> log in</a>
+          </li>
         </ul>
       </nav>
+      <img
+        src="../assets/img/general/navactive.svg"
+        alt=""
+        class="w-full self-end qr"
+      />
     </header>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>
