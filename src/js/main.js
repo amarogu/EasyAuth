@@ -11,8 +11,8 @@ span.addEventListener("click", () => {
   items.forEach((item) => {
     item.classList.toggle("animate__animated");
     item.classList.toggle("animate__flipInX");
-    qr.classList.toggle("animate__animated");
-    qr.classList.toggle("animate__fadeInDown");
+    // qr.classList.toggle("animate__animated");
+    // qr.classList.toggle("animate__heartBeat");
   });
   // header.classList.toggle("items-center");
 });

@@ -7,28 +7,41 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Document</title>
   </head>
-  <body class="font-body">
+  <body class="font-body text-body">
     <header
       id="header"
-      class="flex flex-col items-center justify-between border-lightgray border-b h-screen max-h-[70] transition-all sm:flex-row overflow-hidden duration-500"
+      class="flex flex-col items-center justify-between sm:justify-center border-lightgray border-b h-screen max-h-[70] sm:max-h-[70] transition-all sm:flex-row overflow-hidden duration-500"
     >
       <nav
         class="flex w-full max-w-[283] sm:max-w-[475] md:max-w-[543] lg:max-w-[760] xl:max-w-[1047] items-center justify-between p-6 h-[fit-content]"
         id="nav"
       >
-        <div>
+        <div class="flex sm:gap-5 lg:gap-10">
           <img src="../assets/img/general/logo.svg" alt="" />
+          <div class="hidden sm:block">
+            <ul class="flex text-base">
+              <li class="sm:mr-5 lg:mr-10">
+                <a href="">About us</a>
+              </li>
+              <li>
+                <a href="">Features</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="" id="nav-icon3">
+        <button
+          class="hidden sm:block py-1 px-4 lg:px-6 border-body border-2 text-base"
+        >
+          <a href="">Log In</a>
+        </button>
+        <div class="sm:hidden" id="nav-icon3">
           <span></span>
           <span></span>
           <span></span>
           <span></span>
         </div>
       </nav>
-      <nav
-        class="flex max-w-[283] sm:max-w-[475] md:max-w-[543] lg:max-w-[760] xl:max-w-[1047] w-full p-6"
-      >
+      <nav class="flex max-w-[283] w-full p-6 sm:hidden">
         <ul class="text-4lg font-bold uppercase">
           <li class="pb-6 item">
             <a href="" class="text-extralightgray">About us</a>
@@ -37,14 +50,18 @@
             <a href="" class="text-extralightgray"> Features</a>
           </li>
           <li class="pb-6 item">
-            <a href="" class="text-extralightgray"> log in</a>
+            <button
+              class="text-lg py-1 px-8 border-body border-2 text-extralightgray font-normal"
+            >
+              <a href="">Log In</a>
+            </button>
           </li>
         </ul>
       </nav>
       <img
         src="../assets/img/general/navactive.svg"
         alt=""
-        class="w-full self-end qr"
+        class="w-full self-end qr sm:hidden"
       />
     </header>
     <script src="js/main.js" type="module"></script>
