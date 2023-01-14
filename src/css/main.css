@@ -126,4 +126,8 @@
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
   }
+
+  .bodyhidden {
+    overflow: hidden;
+  }
   
