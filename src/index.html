@@ -13,7 +13,7 @@
       class="flex flex-col items-center justify-between sm:justify-center border-lightgray border-b h-screen max-h-[70] sm:max-h-[70] transition-all sm:flex-row overflow-hidden duration-500"
     >
       <nav
-        class="flex w-full max-w-[283] sm:max-w-[475] md:max-w-[543] lg:max-w-[760] xl:max-w-[1047] items-center justify-between p-6 h-[fit-content]"
+        class="flex w-full max-w-[283] sm:max-w-[475] md:max-w-[543] lg:max-w-[760] xl:max-w-[1047] items-center justify-between py-6 h-[fit-content]"
         id="nav"
       >
         <div class="flex sm:gap-5 lg:gap-10">
@@ -64,16 +64,33 @@
         class="w-full self-end qr sm:hidden"
       />
     </header>
-    <main>
-      <section>
-        <div>
+    <main class="p-8">
+      <section
+        class="flex md:m-auto md:gap-8 flex-col md:flex-row md:max-w-[543] items-center md:items-start"
+      >
+        <div class="w-1/2 relative">
           <object
             data="../assets/img/general/homephonecorrect.svg"
             type="image/svg+xml"
           ></object>
+          <div
+            class="absolute w-[200vw] -z-10 h-1/4 -translate-x-1/2 top-[80] bg-[#F0F0F0]"
+          ></div>
         </div>
-        <div>
-          <h1 class="font-bold"></h1>
+        <div class="max-w-[283] text-center md:text-left py-8">
+          <h1 class="font-bold">
+            Authorize a <span class="underline">friend</span> to get <br />
+            into your residence
+          </h1>
+          <p class="font-medium max-w-[283] py-4">
+            With EasyAuth you can quickly send someone an authorization to
+            access your apartment or condominium.
+          </p>
+          <button
+            class="text-lg m-auto md:m-0 btn py-1 px-8 border-body border-2 text-extralightgray font-normal"
+          >
+            <a href="">Get started</a>
+          </button>
         </div>
       </section>
     </main>
