@@ -1,5 +1,26 @@
 import "animate.css";
+import Splide from "@splidejs/splide";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 
+new Splide(".splide", {
+  perPage: 3,
+  mediaQuery: "min",
+  breakpoints: {
+    640: {
+      perPage: 3,
+    },
+    768: {
+      perPage: 4,
+    },
+    1280: {
+      perPage: 8,
+    },
+  },
+  arrows: false,
+  pagination: false,
+  type: "loop",
+  drag: true,
+}).mount({ AutoScroll });
 const span = document.getElementById("nav-icon3");
 const header = document.getElementById("header");
 const items = document.querySelectorAll(".item");

@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@splidejs/splide/dist/css/splide.min.css"
+    />
     <title>Document</title>
   </head>
-  <body class="font-body text-body">
+  <body class="font-body text-body overflow-x-hidden">
     <header
       id="header"
       class="flex flex-col items-center justify-between sm:justify-center border-lightgray border-b h-screen max-h-[70] sm:max-h-[70] transition-all sm:flex-row overflow-hidden duration-500"
@@ -30,7 +34,7 @@
           </div>
         </div>
         <button
-          class="hidden sm:block py-1 px-4 lg:px-6 border-body border-2 text-base"
+          class="hidden sm:block btn py-1 px-4 lg:px-6 border-body border-2 text-base"
         >
           <a href="">Log In</a>
         </button>
@@ -74,8 +78,53 @@
             type="image/svg+xml"
           ></object>
           <div
-            class="absolute w-[200vw] -z-10 h-1/4 -translate-x-1/2 top-[80] bg-[#F0F0F0]"
-          ></div>
+            class="absolute flex items-center w-[200vw] -z-10 h-1/4 -translate-x-1/2 top-[80] md:top-[60%] bg-[#F0F0F0]"
+          >
+            <section
+              class="splide w-full"
+              aria-label="Splide Basic HTML Example"
+            >
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide flex items-center">
+                    <img
+                      src="../assets/img/general/keys.png"
+                      alt=""
+                      class="w-[50] sm:w-[70]"
+                    />
+                  </li>
+                  <li class="splide__slide flex items-center">
+                    <img
+                      src="../assets/img/general/dash.png"
+                      alt=""
+                      class="w-[50] sm:w-[70]"
+                    />
+                  </li>
+                  <li class="splide__slide flex items-center">
+                    <img
+                      src="../assets/img/general/wallet.png"
+                      alt=""
+                      class="w-[50] sm:w-[70]"
+                    />
+                  </li>
+                  <li class="splide__slide flex items-center">
+                    <img
+                      src="../assets/img/general/privacy.png"
+                      alt=""
+                      class="w-[50] sm:w-[70]"
+                    />
+                  </li>
+                  <li class="splide__slide flex items-center">
+                    <img
+                      src="../assets/img/general/3d-buddy-checklist-with-one-done-item-and-one-not-done-item-1.png"
+                      alt=""
+                      class="w-[50] sm:w-[70]"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
         </div>
         <div class="max-w-[283] text-center md:text-left py-8">
           <h1 class="font-bold">
